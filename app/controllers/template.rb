@@ -1,11 +1,11 @@
 #show all users
-get '/templates' do
+get '/post' do
   @templates = Template.all
   erb :'templates/index'
 end
 
 #new template form
-get '/templates/new' do
+get '/post/new' do
   if logged_in
     erb :'templates/new'
   else
