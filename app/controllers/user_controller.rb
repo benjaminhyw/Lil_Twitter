@@ -32,6 +32,7 @@ end
 #show a user
 get '/users/:id' do
 	@user = User.find(params[:id])
+	erb :'profile'
 end
 
 #submit user edit
